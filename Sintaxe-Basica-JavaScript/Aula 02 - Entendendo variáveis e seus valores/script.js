@@ -102,7 +102,6 @@
         var menorOuIgual = 5 <= 2;
         console.log(menorOuIgual); */
 
-
        /*  // operadores lógicos
         // && - todos os valores devem ser true
         var e = true && true;
