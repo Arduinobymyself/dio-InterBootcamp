@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Display Flex</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            text-align: center;
+        }
+        .container .flex{
+            max-width: 200px;
+            padding: 10px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+        }
+        .item{
+            background-color: aqua;
+            margin: 5px;
+        }
+        .row{
+            margin: 0;
+            padding-top: 20px;
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+        }
+        .row-item{
+            background: blue;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+
+        }
+        .row-reverse{
+            margin: 0;
+            padding-top: 20px;
+            display: flex;
+            list-style: none;
+            flex-direction: row-reverse;
+        }
+        .row-reverse-item{
+            background: red;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+
+        }
+        .column{
+            margin: 0;
+            padding-top: 20px;
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            float: left;
+        }
+        .column-item{
+            background: green;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+
+        }
+        .column-reverse{
+            margin: 0;
+            padding-top: 20px;
+            display: flex;
+            list-style: none;
+            flex-direction: column-reverse;
+            float: right;
+            
+        }
+        .column-reverse-item{
+            background: yellow;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            margin: 5px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Fundamentos do Flexbox</h1>
+    <h2>Flex direction</h2>
+    <header class="container">
+        <div class="flex">
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+            <div class="item">item3</div>
+            <div class="item">item4</div>
+            <div class="item">item5</div>
+        </div> 
+    </header>
+    <main>
+        <ul class="row">
+            <li class="row-item">1</li>
+            <li class="row-item">2</li>
+            <li class="row-item">3</li>
+            <li class="row-item">4</li>
+            <li class="row-item">5</li>
+        </ul>
+        <ul class="row-reverse">
+            <li class="row-reverse-item">1</li>
+            <li class="row-reverse-item">2</li>
+            <li class="row-reverse-item">3</li>
+            <li class="row-reverse-item">4</li>
+            <li class="row-reverse-item">5</li>
+        </ul>
+        <ul class="column">
+            <li class="column-item">1</li>
+            <li class="column-item">2</li>
+            <li class="column-item">3</li>
+            <li class="column-item">4</li>
+            <li class="column-item">5</li>
+        </ul>
+        <ul class="column-reverse">
+            <li class="column-reverse-item">1</li>
+            <li class="column-reverse-item">2</li>
+            <li class="column-reverse-item">3</li>
+            <li class="column-reverse-item">4</li>
+            <li class="column-reverse-item">5</li>
+        </ul>
+    </main>
+    
+</body>
+</html>

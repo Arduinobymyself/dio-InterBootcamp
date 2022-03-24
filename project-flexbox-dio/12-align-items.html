@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align-Items</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 350px;
+            margin-bottom: 10px;
+        }
+        .align-container{
+             align-items: center;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .item{
+            background-color: brown;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 10px;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fundamentos - Align Self</h1>
+
+    <h2>ROW</h2>
+
+    <h3>Auto - align-container</h3>
+    <div class="container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">BBB</div>
+        <div class="item auto">Lorem ipsum dolor sit.</div>
+        <div class="item auto">1234</div>
+        <div class="item auto">567</div>
+    </div>
+
+    <h3>Mix</h3>
+    <div class="container">
+        <div class="item start">AAA</div>
+        <div class="item stretch">BBB</div>
+        <div class="item auto">Lorem ipsum dolor sit.</div>
+        <div class="item end">1234</div>
+        <div class="item center">567</div>
+        <div class="item start">890</div>
+    </div>
+
+    <h2>COLUMN</h2>
+
+    <h3>Auto - align-container</h3>
+    <div class="container align-container column">
+        <div class="item auto">AAA</div>
+        <div class="item auto">BBB</div>
+        <div class="item auto">Lorem ipsum dolor sit.</div>
+        <div class="item auto">1234</div>
+        <div class="item auto">567</div>
+    </div>
+
+    <h3>Mix</h3>
+    <div class="container column">
+        <div class="item start">AAA</div>
+        <div class="item stretch">BBB</div>
+        <div class="item auto">Lorem ipsum dolor sit.</div>
+        <div class="item end">1234</div>
+        <div class="item center">567</div>
+        <div class="item start">890</div>
+    </div
+
+</body>
+</html>
